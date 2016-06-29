@@ -1,0 +1,199 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+
+/* General */
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #FFF;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+  background: url('../img/background.jpg') no-repeat center top;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Custom */
+.modal {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0 1px 8px #000, inset 0px 2px 0px #444;
+}
+.modal.show {
+  display: block;
+}
+
+#small-modal {
+  top: 40px;
+  right: 40px;
+  background: #2D2D2D;
+  height: 70px;
+  width: 320px;
+  cursor: pointer;
+}
+
+#small-modal .image {
+  height: 70px;
+  width: 70px;
+  float: left;
+  padding: 15px;
+  background: url('../img/seperator-small.png') no-repeat right bottom;
+}
+
+#small-modal img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#small-modal .info {
+  width: 250px;
+  float: left;
+  padding: 16px;
+}
+
+#small-modal .info p {
+  color: #FFF;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  line-height: 17px;
+}
+
+#small-modal .info span {
+  font-size: 13px;
+}
+
+#main-modal {
+  top: 40px;
+  right: 40px;
+  background: #2D2D2D url('../img/main-bg.png') no-repeat right bottom;
+  min-height: 210px;
+  width: 320px;
+}
+
+#main-modal .seperator {
+  background: #282828;
+  height: 2px;
+  margin: 0 15px;
+  clear: both;
+}
+
+#main-modal .top {
+  position: relative;
+  height: 160px;
+  width: 100%;
+  float: left;
+}
+
+#main-modal .top .image {
+  height: 160px;
+  width: 160px;
+  float: left;
+  padding: 15px;
+}
+
+#main-modal .top img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#main-modal .top .info {
+  height: 100%;
+  width: 160px;
+  float: left;
+  padding: 33px 5px 0;
+}
+
+#main-modal .top .info p  {
+  color: #FFF;
+  font-size: 44px;
+  letter-spacing: -0.5px;
+  line-height: 32px;
+  text-align: center;
+}
+
+#main-modal .top .info span  {
+  font-size: 22px;
+}
+
+#main-modal .top .close {
+  color: #FFF;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  line-height: 28px;
+  padding: 0 5px;
+}
+
+#main-modal .interests {
+  padding: 6px 15px 15px;
+  width: 100%;
+  float: left;
+}
+
+#main-modal .interests .seperator {
+  margin: 0;
+}
+
+#main-modal .interests h3 {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 0 7px;
+}
+
+#main-modal .interests ul {
+  list-style: none;
+  margin: 20px 0 0 0;
+}
+
+#main-modal .interests ul li {
+  float: left;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+#main-modal .interests ul li:first-child {
+  margin: 0;
+}
+
+#main-modal .interests ul li .ul-icon {
+  font-size: 36px;
+  color: #FFF;
+  line-height: 36px;
+  float: left;
+  padding: 0 15px 0 0;
+  background: url('../img/seperator-small.png') no-repeat right bottom;
+  margin: 0 10px 0 0;
+  width: 55px;
+}
+
+#main-modal .interests ul li .ul-text {
+  float: left;
+}
+
+#main-modal .interests ul li .ul-text p {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 36px;
+}
